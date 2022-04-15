@@ -43,7 +43,6 @@ a {
 	font-size: 1em;
 	font-weight: 900;
 	text-transform: uppercase;
-	border: 0;
 	border-radius: 3px;
 	background: var(--main-secondary-color);
 	cursor: pointer;

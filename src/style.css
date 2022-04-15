@@ -193,16 +193,18 @@ form {
 }
 
 #email {
-	border: 0;
+	border: 2px;
+	border-color: #1A4461;
 	width: 400px;
 	height: 50px;
 	border-radius: 10px;
 	padding: 10px;
+	background-color: #adb5bd;
 }
 
 #email::placeholder {
 	font-family: 'Open Sans', sans-serif;
-	color: #adb5bd;
+	color: gray;
 }
 
 #submit {

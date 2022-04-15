@@ -4,6 +4,7 @@
 :root {
 	--main-primary-color: #A58F81;
 	--main-secondary-color: #1A4461;
+	--main-click-color: #4791d0;
 }
 
 * {
@@ -15,6 +16,14 @@
 body {
 	background-color: #f9f9f9;
 	font-family: 'Lato', sans-serif;
+	background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=1380&t=st=1649971202~exp=1649971802~hmac=61561855ff5b2feb2c9a33ada0fb08b6479586ba5a495f14b1554ef9aa7baa9b");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 li {
@@ -150,22 +159,15 @@ nav > ul {
 }
 
 section {
-	background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=1380&t=st=1649971202~exp=1649971802~hmac=61561855ff5b2feb2c9a33ada0fb08b6479586ba5a495f14b1554ef9aa7baa9b");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	width: 100%;
+	width: 98%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 100%;
-	overflow: scroll;
 }
 
 #banner-img {
 	display: flex;
-	flex-flow: row;
 	width: 100vw;
 	height: 100vh;
 }
@@ -212,5 +214,13 @@ form {
 
 #submit:hover {
     animation-name: background-color;
-    animation-duration: 500ms;
-  }
+    animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+	100% {
+		background-color: var(--main-click-color);
+	}
+}
+
